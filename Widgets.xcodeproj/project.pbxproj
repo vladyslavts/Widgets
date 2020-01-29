@@ -21,6 +21,12 @@
 		F5B1F6E323E1AA0F00A04985 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6E223E1AA0F00A04985 /* TodayViewController.swift */; };
 		F5B1F6E623E1AA0F00A04985 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B1F6E423E1AA0F00A04985 /* MainInterface.storyboard */; };
 		F5B1F6EA23E1AA0F00A04985 /* WidgetWithUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5B1F6DF23E1AA0F00A04985 /* WidgetWithUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5B1F6EF23E1AB8100A04985 /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6EE23E1AB8100A04985 /* ConfigurableButton.swift */; };
+		F5B1F6F023E1AB8100A04985 /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6EE23E1AB8100A04985 /* ConfigurableButton.swift */; };
+		F5B1F6F123E1AB8100A04985 /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6EE23E1AB8100A04985 /* ConfigurableButton.swift */; };
+		F5B1F6F323E1BD6A00A04985 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6F223E1BD6A00A04985 /* ConfigurableView.swift */; };
+		F5B1F6F423E1BD6A00A04985 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6F223E1BD6A00A04985 /* ConfigurableView.swift */; };
+		F5B1F6F523E1BD6A00A04985 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1F6F223E1BD6A00A04985 /* ConfigurableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,8 @@
 		F5B1F6E223E1AA0F00A04985 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		F5B1F6E523E1AA0F00A04985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F5B1F6E723E1AA0F00A04985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B1F6EE23E1AB8100A04985 /* ConfigurableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableButton.swift; sourceTree = "<group>"; };
+		F5B1F6F223E1BD6A00A04985 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,8 @@
 				F5B1F6B123E1A8E500A04985 /* AppDelegate.swift */,
 				F5B1F6B323E1A8E500A04985 /* SceneDelegate.swift */,
 				F5B1F6B523E1A8E500A04985 /* ViewController.swift */,
+				F5B1F6EE23E1AB8100A04985 /* ConfigurableButton.swift */,
+				F5B1F6F223E1BD6A00A04985 /* ConfigurableView.swift */,
 				F5B1F6B723E1A8E500A04985 /* Main.storyboard */,
 				F5B1F6BA23E1A8E600A04985 /* Assets.xcassets */,
 				F5B1F6BC23E1A8E600A04985 /* LaunchScreen.storyboard */,
@@ -297,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B1F6F323E1BD6A00A04985 /* ConfigurableView.swift in Sources */,
+				F5B1F6EF23E1AB8100A04985 /* ConfigurableButton.swift in Sources */,
 				F5B1F6B623E1A8E500A04985 /* ViewController.swift in Sources */,
 				F5B1F6B223E1A8E500A04985 /* AppDelegate.swift in Sources */,
 				F5B1F6B423E1A8E500A04985 /* SceneDelegate.swift in Sources */,
@@ -307,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B1F6F423E1BD6A00A04985 /* ConfigurableView.swift in Sources */,
+				F5B1F6F023E1AB8100A04985 /* ConfigurableButton.swift in Sources */,
 				F5B1F6CF23E1A9C900A04985 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B1F6F523E1BD6A00A04985 /* ConfigurableView.swift in Sources */,
+				F5B1F6F123E1AB8100A04985 /* ConfigurableButton.swift in Sources */,
 				F5B1F6E323E1AA0F00A04985 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +506,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,6 +525,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = WidgetWithButtons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = WidgetWithButtons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = WidgetWithUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX38F28MJR;
 				INFOPLIST_FILE = WidgetWithUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
