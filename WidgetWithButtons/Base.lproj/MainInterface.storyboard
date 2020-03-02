@@ -23,7 +23,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-J3-VCG" customClass="ConfigurableButton" customModule="WidgetWithButtons" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="96" height="94"/>
-                                                <state key="normal" title="Say"/>
+                                                <state key="normal" title="RED"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -32,10 +32,13 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="red:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="CkP-el-f9l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-74-Yj9" customClass="ConfigurableButton" customModule="WidgetWithButtons" customModuleProvider="target">
                                                 <rect key="frame" x="104" y="0.0" width="96" height="94"/>
-                                                <state key="normal" title="Hello World"/>
+                                                <state key="normal" title="GREEN"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -44,10 +47,13 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="green:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="dpe-Kf-TVa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-07-Rfp" customClass="ConfigurableButton" customModule="WidgetWithButtons" customModuleProvider="target">
                                                 <rect key="frame" x="208" y="0.0" width="96" height="94"/>
-                                                <state key="normal" title="To Me"/>
+                                                <state key="normal" title="BLUE"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -56,6 +62,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="blue:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="cU0-Sz-x1t"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -176,6 +185,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="350"/>
                     <connections>
+                        <outlet property="dateContainer" destination="K5a-AZ-ezQ" id="wFL-6b-lFX"/>
                         <outlet property="dateLabel" destination="Arr-yn-UaY" id="vl0-RJ-nVL"/>
                         <outlet property="timeLabel" destination="Gup-xh-yb7" id="l23-wU-OxX"/>
                     </connections>

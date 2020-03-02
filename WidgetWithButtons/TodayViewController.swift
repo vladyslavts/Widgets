@@ -13,8 +13,9 @@ class TodayViewController: UIViewController {
         
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dateContainer: UIView!
     
-    var timer = Timer()
+    private var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,33 @@ class TodayViewController: UIViewController {
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .long)
     }
     
+    @IBAction func red(_ sender: ConfigurableButton) {
+        let url = URL(string: "widgetTest://red")!
+        self.extensionContext?.open(url, completionHandler: { (success) in
+            if (!success) {
+                print("error: failed to open app from Today Extension")
+            }
+        })
+    }
+    
+    @IBAction func green(_ sender: ConfigurableButton) {
+        let url = URL(string: "widgetTest://green")!
+        self.extensionContext?.open(url, completionHandler: { (success) in
+            if (!success) {
+                print("error: failed to open app from Today Extension")
+            }
+        })
+    }
+    
+    @IBAction func blue(_ sender: ConfigurableButton) {
+        let url = URL(string: "widgetTest://blue")!
+        self.extensionContext?.open(url, completionHandler: { (success) in
+            if (!success) {
+                print("error: failed to open app from Today Extension")
+            }
+        })
+    }
+    
 }
 
 extension TodayViewController: NCWidgetProviding {
@@ -46,8 +74,10 @@ extension TodayViewController: NCWidgetProviding {
         switch activeDisplayMode {
         case .compact:
             self.preferredContentSize = maxSize
+            dateContainer.isHidden = true
         case .expanded:
             self.preferredContentSize = CGSize(width: maxSize.width, height: 320)
+            dateContainer.isHidden = false
         default: break
         }
     }

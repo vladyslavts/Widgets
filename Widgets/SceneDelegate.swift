@@ -48,6 +48,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        let url = URLContexts.first
+        if url?.url.scheme == "widgetTest" {
+            switch url?.url.host {
+            case "red":
+                window?.rootViewController?.view.backgroundColor = .red
+            case "green":
+                window?.rootViewController?.view.backgroundColor = .green
+            case "blue":
+                window?.rootViewController?.view.backgroundColor = .blue
+            default:
+                break
+            }
+        }
+    }
 
 }
 
